@@ -6,10 +6,12 @@ distributions.
 ## Usage
 
     % vagrant up ${DISTRIBUTION}
+    % vagrant ssh ${DISTRIBUTION}
 
 For example:
 
     % vagrant up centos-7-x86_64
+    % vagrant ssh centos-7-x86_64
 
 See `Vagrantfile` for a list of available distribution.
 

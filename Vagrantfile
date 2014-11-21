@@ -54,4 +54,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       node.vm.box_url = vm[:box_url]
     end
   end
+
+  config.vm.network "public_network"
 end

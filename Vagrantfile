@@ -47,10 +47,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   id_prefix = ENV["VM_ID_PREFIX"]
   vms.each do |vm|
-    id = vm[:id]
+    box_id = vm[:id]
+    id = box_id
     id = "#{id_prefix}#{id}" if id_prefix
     config.vm.define(id) do |node|
-      node.vm.box = id
+      node.vm.box = box_id
       node.vm.box_url = vm[:box_url]
     end
   end

@@ -43,6 +43,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :id => "centos-7-x86_64",
       :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-7.0_chef-provisionerless.box",
     },
+    {
+      :id => "oracle-linux-6.4-x86_64",
+      :box_url => "https://storage.us2.oraclecloud.com/v1/istoilis-istoilis/vagrant/oel64-64.box",
+    },
   ]
 
   id_prefix = ENV["VM_ID_PREFIX"]

@@ -47,6 +47,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :id => "oracle-linux-6.4-x86_64",
       :box_url => "https://storage.us2.oraclecloud.com/v1/istoilis-istoilis/vagrant/oel64-64.box",
     },
+    {
+      :id => "freebsd-10-i386",
+      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_freebsd-10.1-i386_chef-provisionerless.box",
+    },
+    {
+      :id => "freebsd-10-x86_64",
+      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_freebsd-10.1_chef-provisionerless.box",
+    },
   ]
 
   id_prefix = ENV["VM_ID_PREFIX"]

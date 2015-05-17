@@ -68,6 +68,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   id_prefix = ENV["VM_ID_PREFIX"]
   memory = ENV["VM_MEMORY"]
   memory = Integer(memory) if memory
+  synced_folder = ENV["VM_SYNCED_FOLDER"]
+  synced_folder = synced_folder.split(":") if synced_folder
   vms.each do |vm|
     box_id = vm[:id]
     id = box_id
@@ -75,6 +77,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.define(id) do |node|
       node.vm.box = box_id
       node.vm.box_url = vm[:box_url]
+      node.vm.synced_folder(*synced_folder) if synced_folder
       node.vm.provider("virtualbox") do |virtual_box|
         virtual_box.memory = memory if memory
       end

@@ -63,6 +63,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :id => "openbsd-5-x86_64",
       :box_url => "https://github.com/jose-lpa/veewee-openbsd/releases/download/v0.5.5/openbsd55.box",
     },
+    {
+      :id => "solaris-11-x86_64",
+      :box_url => "http://www.benden.us/vagrant/solaris-11.2.box",
+    },
   ]
 
   id_prefix = ENV["VM_ID_PREFIX"]

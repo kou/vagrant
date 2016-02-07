@@ -86,6 +86,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   ]
 
   id_prefix = ENV["VM_ID_PREFIX"]
+  n_cpus = ENV["VM_N_CPUS"]
+  n_cpus = Integer(n_cpus) if n_cpus
   memory = ENV["VM_MEMORY"]
   memory = Integer(memory) if memory
   synced_folder = ENV["VM_SYNCED_FOLDER"]
@@ -99,6 +101,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       node.vm.box_url = vm[:box_url]
       node.vm.synced_folder(*synced_folder) if synced_folder
       node.vm.provider("virtualbox") do |virtual_box|
+        virtual_box.cpus = n_cpus if n_cpus
         virtual_box.memory = memory if memory
       end
     end

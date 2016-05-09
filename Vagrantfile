@@ -44,6 +44,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-15.04_chef-provisionerless.box",
     },
     {
+      :id => "ubuntu-16.04-i386",
+      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-16.04-i386_chef-provisionerless.box",
+    },
+    {
+      :id => "ubuntu-16.04-x86_64",
+      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-16.04_chef-provisionerless.box",
+    },
+    {
       :id => "centos-5-i386",
       :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-5.11-i386_chef-provisionerless.box",
     },

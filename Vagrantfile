@@ -8,12 +8,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   vms = [
     {
       :id => "debian-wheezy-i386",
-      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_debian-7.6-i386_chef-provisionerless.box
+      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_debian-7.10-i386_chef-provisionerless.box
 ",
     },
     {
       :id => "debian-wheezy-amd64",
-      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_debian-7.6_chef-provisionerless.box",
+      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_debian-7.10_chef-provisionerless.box",
     },
     {
       :id => "debian-jessie-i386",
@@ -70,11 +70,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     },
     {
       :id => "centos-6-i386",
-      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6-i386_chef-provisionerless.box",
+      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.7-i386_chef-provisionerless.box",
     },
     {
       :id => "centos-6-x86_64",
-      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box",
+      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.7_chef-provisionerless.box",
     },
     {
       :id => "centos-7-x86_64",
@@ -86,11 +86,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     },
     {
       :id => "freebsd-10-i386",
-      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_freebsd-10.1-i386_chef-provisionerless.box",
+      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_freebsd-10.3-i386_chef-provisionerless.box",
     },
     {
       :id => "freebsd-10-x86_64",
-      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_freebsd-10.1_chef-provisionerless.box",
+      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_freebsd-10.3_chef-provisionerless.box",
     },
     {
       :id => "openbsd-5-x86_64",

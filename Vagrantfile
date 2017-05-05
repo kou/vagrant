@@ -92,6 +92,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :box_url => "https://storage.us2.oraclecloud.com/v1/istoilis-istoilis/vagrant/oel64-64.box",
     },
     {
+      :id => "fedora-25",
+      :box => "bento/fedora-25",
+    },
+    {
       :id => "freebsd-10-x86_64",
       :box => "bento/freebsd-10.3",
     },

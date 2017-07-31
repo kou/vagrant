@@ -80,6 +80,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :box => "bento/ubuntu-17.04",
     },
     {
+      :id => "ubuntu-17.10-i386",
+      :box => "bento/ubuntu-17.10-i386",
+    },
+    {
+      :id => "ubuntu-17.10-x86_64",
+      :box => "bento/ubuntu-17.10",
+    },
+    {
       :id => "centos-5-i386",
       :box => "bento/centos-5.11-i386",
     },

@@ -16,15 +16,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     },
     {
       :id => "debian-jessie-i386",
-      :box => "bento/debian-8.7-i386",
+      :box => "bento/debian-8.9-i386",
     },
     {
       :id => "debian-jessie-amd64",
-      :box => "bento/debian-8.8",
+      :box => "bento/debian-8.9",
     },
     {
       :id => "debian-stretch-amd64",
-      :box => "bento/debian-9.0",
+      :box => "bento/debian-9.1",
     },
     {
       :id => "ubuntu-12.04-x86_64",
@@ -118,6 +118,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     {
       :id => "freebsd-10-x86_64",
       :box => "bento/freebsd-10.3",
+    },
+    {
+      :id => "freebsd-11-x86_64",
+      :box => "bento/freebsd-11.1",
     },
     {
       :id => "openbsd-5-x86_64",

@@ -117,7 +117,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     },
     {
       :id => "centos-7-x86_64",
-      :box => "bento/centos-7.2",
+      :box => "bento/centos-7.5",
     },
     {
       :id => "oracle-linux-6.4-x86_64",

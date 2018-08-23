@@ -7,32 +7,12 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   vms = [
     {
-      :id => "debian-wheezy-i386",
-      :box => "bento/debian-7.11-i386",
-    },
-    {
-      :id => "debian-wheezy-amd64",
-      :box => "bento/debian-7.11",
-    },
-    {
-      :id => "debian-jessie-i386",
-      :box => "bento/debian-8.9-i386",
-    },
-    {
-      :id => "debian-jessie-amd64",
-      :box => "bento/debian-8.9",
-    },
-    {
       :id => "debian-stretch-i386",
-      :box => "bento/debian-9.3-i386",
+      :box => "bento/debian-9.5-i386",
     },
     {
       :id => "debian-stretch-amd64",
-      :box => "bento/debian-9.3",
-    },
-    {
-      :id => "ubuntu-12.04-x86_64",
-      :box => "bento/ubuntu-12.04",
+      :box => "bento/debian-9",
     },
     {
       :id => "ubuntu-14.04-i386",
@@ -43,53 +23,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :box => "bento/ubuntu-14.04",
     },
     {
-      :id => "ubuntu-14.10-i386",
-      :box => "bento/ubuntu-14.10-i386",
-    },
-    {
-      :id => "ubuntu-14.10-x86_64",
-      :box => "bento/ubuntu-14.10",
-    },
-    {
-      :id => "ubuntu-15.04-i386",
-      :box => "bento/ubuntu-15.04-i386",
-      :box_url => "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-15.04-i386_chef-provisionerless.box",
-    },
-    {
-      :id => "ubuntu-15.04-x86_64",
-      :box => "bento/ubuntu-15.04",
-    },
-    {
       :id => "ubuntu-16.04-i386",
       :box => "bento/ubuntu-16.04-i386",
     },
     {
       :id => "ubuntu-16.04-x86_64",
       :box => "bento/ubuntu-16.04",
-    },
-    {
-      :id => "ubuntu-16.10-i386",
-      :box => "bento/ubuntu-16.10-i386",
-    },
-    {
-      :id => "ubuntu-16.10-x86_64",
-      :box => "bento/ubuntu-16.10",
-    },
-    {
-      :id => "ubuntu-17.04-i386",
-      :box => "bento/ubuntu-17.04-i386",
-    },
-    {
-      :id => "ubuntu-17.04-x86_64",
-      :box => "bento/ubuntu-17.04",
-    },
-    {
-      :id => "ubuntu-17.10-i386",
-      :box => "bento/ubuntu-17.10-i386",
-    },
-    {
-      :id => "ubuntu-17.10-x86_64",
-      :box => "bento/ubuntu-17.10",
     },
     {
       :id => "ubuntu-18.04-i386",
@@ -109,15 +48,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     },
     {
       :id => "centos-6-i386",
-      :box => "bento/centos-6.7-i386",
+      :box => "bento/centos-6.10-i386",
     },
     {
       :id => "centos-6-x86_64",
-      :box => "bento/centos-6.7",
+      :box => "bento/centos-6",
     },
     {
       :id => "centos-7-x86_64",
-      :box => "bento/centos-7.5",
+      :box => "bento/centos-7",
     },
     {
       :id => "oracle-linux-6.4-x86_64",
@@ -129,11 +68,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     },
     {
       :id => "freebsd-10-x86_64",
-      :box => "bento/freebsd-10.3",
+      :box => "bento/freebsd-10",
     },
     {
       :id => "freebsd-11-x86_64",
-      :box => "bento/freebsd-11.1",
+      :box => "bento/freebsd-11",
     },
     {
       :id => "openbsd-5-x86_64",

@@ -43,6 +43,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :box => "bento/ubuntu-18.10",
     },
     {
+      :id => "ubuntu-19.04-x86_64",
+      :box => "bento/ubuntu-19.04",
+    },
+    {
       :id => "centos-5-i386",
       :box => "bento/centos-5.11-i386",
     },

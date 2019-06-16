@@ -95,7 +95,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   id_prefix = ENV["VM_ID_PREFIX"]
   n_cpus = ENV["VM_N_CPUS"] || 2
   n_cpus = Integer(n_cpus) if n_cpus
-  memory = ENV["VM_MEMORY"] || 1024
+  memory = ENV["VM_MEMORY"] || 2048
   memory = Integer(memory) if memory
   synced_folder = ENV["VM_SYNCED_FOLDER"]
   synced_folder = synced_folder.split(":") if synced_folder

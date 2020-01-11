@@ -83,6 +83,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :box => "bento/freebsd-11",
     },
     {
+      :id => "freebsd-12-x86_64",
+      :box => "bento/freebsd-12",
+    },
+    {
       :id => "openbsd-5-x86_64",
       :box_url => "https://github.com/jose-lpa/veewee-openbsd/releases/download/v0.5.5/openbsd55.box",
     },

@@ -15,6 +15,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :box => "bento/debian-9",
     },
     {
+      :id => "debian-buster-amd64",
+      :box => "bento/debian-10",
+    },
+    {
       :id => "ubuntu-14.04-i386",
       :box => "bento/ubuntu-14.04-i386",
     },

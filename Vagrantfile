@@ -71,6 +71,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :box => "bento/centos-7",
     },
     {
+      :id => "centos-8-x86_64",
+      :box => "bento/centos-8",
+    },
+    {
       :id => "oracle-linux-6.4-x86_64",
       :box_url => "https://storage.us2.oraclecloud.com/v1/istoilis-istoilis/vagrant/oel64-64.box",
     },

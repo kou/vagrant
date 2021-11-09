@@ -19,6 +19,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :box => "bento/debian-10",
     },
     {
+      :id => "debian-bullseye-i386",
+      :box => "bento/debian-11.1-i386",
+    },
+    {
+      :id => "debian-bullseye-amd64",
+      :box => "bento/debian-11",
+    },
+    {
       :id => "ubuntu-14.04-i386",
       :box => "bento/ubuntu-14.04-i386",
     },

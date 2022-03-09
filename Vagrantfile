@@ -118,6 +118,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :id => "solaris-11-x86_64",
       :box_url => "http://www.benden.us/vagrant/solaris-11.2.box",
     },
+    {
+      :id => "amazon-linux-2",
+      :box => "bento/amazonlinux-2",
+    },
   ]
 
   id_prefix = ENV["VM_ID_PREFIX"]

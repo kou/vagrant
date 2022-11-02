@@ -67,6 +67,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :box => "bento/ubuntu-20.04",
     },
     {
+      :id => "ubuntu-22.04-x86_64",
+      :box => "bento/ubuntu-22.04",
+    },
+    {
       :id => "centos-5-i386",
       :box => "bento/centos-5.11-i386",
     },
@@ -150,5 +154,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
-  config.vm.network "public_network"
+  # config.vm.network "public_network"
 end

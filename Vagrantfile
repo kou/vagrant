@@ -154,5 +154,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
-  # config.vm.network "public_network"
+  network = ENV["VM_NETWORK"]
+  config.vm.network(network) if network
 end
